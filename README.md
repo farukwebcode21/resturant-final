@@ -9,16 +9,16 @@ pnpm create vite
 2. Install TailwandCSS
    
  ```bash
- ─ pnpm add -D tailwindcss postcss autoprefixer,pnpx tailwindcss init -p  
+  pnpm add -D tailwindcss postcss autoprefixer,pnpx tailwindcss init -p  
  ```
+3. daisyUI
 
-3. daisyUI  
-   
-   ```bash
-   pnpm add -D daisyui@latest
-   ```
-4. React Router Dom
-5. 
-   ```bash
-   pnpm add react-router-dom
+```bash
+pnpm add -D daisyui@latest
 ```
+
+4. Install React Router DOM
+   
+ ```bash
+ pnpm add react-router-dom 
+ ```
