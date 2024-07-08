@@ -32,6 +32,8 @@ pnpm add -D daisyui@latest
    
  ```bash
  
+ ```
+ 
 7. 
 
 ```bash
@@ -76,3 +78,11 @@ pnpm add -D daisyui@latest
  ```bash
  
  ```
+
+ ## If You are face tailwind tailwind css warning you can use this code and solve problem
+ 
+ ```bash
+ @import "tailwindcss/base";
+ @import "tailwindcss/components";
+ @import "tailwindcss/utilities";
+```
