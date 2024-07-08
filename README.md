@@ -17,3 +17,8 @@ pnpm create vite
    ```bash
    pnpm add -D daisyui@latest
    ```
+4. React Router Dom
+5. 
+   ```bash
+   pnpm add react-router-dom
+```
