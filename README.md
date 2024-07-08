@@ -22,3 +22,57 @@ pnpm add -D daisyui@latest
  ```bash
  pnpm add react-router-dom 
  ```
+5. 
+
+```bash
+
+```
+
+6. 
+   
+ ```bash
+ 
+7. 
+
+```bash
+
+```
+
+8. 
+   
+ ```bash
+ 
+ ```
+9. 
+
+```bash
+
+```
+
+10. 
+   
+ ```bash
+ 
+ ```
+11. 
+
+```bash
+
+```
+
+12. 
+   
+ ```bash
+ 
+ ```
+13. 
+
+```bash
+
+```
+
+14. 
+   
+ ```bash
+ 
+ ```
