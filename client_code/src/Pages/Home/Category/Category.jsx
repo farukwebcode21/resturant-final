@@ -10,10 +10,16 @@ import swipe_2 from "../../../assets/home/slide2.jpg";
 import swipe_3 from "../../../assets/home/slide3.jpg";
 import swipe_4 from "../../../assets/home/slide4.jpg";
 import swipe_5 from "../../../assets/home/slide5.jpg";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
+import BistoBoss from "../../../components/BistoBoss/BistoBoss";
 
 const Category = () => {
   return (
     <div>
+      <SectionTitle
+        subHeading={"From 11.00am to 10.00pm"}
+        heading={"Order Online"}
+      ></SectionTitle>
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
@@ -55,6 +61,7 @@ const Category = () => {
           </h3>
         </SwiperSlide>
       </Swiper>
+      <BistoBoss />
     </div>
   );
 };
