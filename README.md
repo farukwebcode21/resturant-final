@@ -22,15 +22,19 @@ pnpm add -D daisyui@latest
  ```bash
  pnpm add react-router-dom 
  ```
-5. 
+5. Carousal Install 
 
 ```bash
+pnpm add react-responsive-carousel
+
 
 ```
 
-6. 
+6. swiper install 
    
  ```bash
+ pnpm add swiper
+
  
  ```
  
