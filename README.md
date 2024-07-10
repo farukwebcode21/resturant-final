@@ -26,16 +26,12 @@ pnpm add -D daisyui@latest
 
 ```bash
 pnpm add react-responsive-carousel
-
-
 ```
 
 6. swiper install 
    
  ```bash
  pnpm add swiper
-
- 
  ```
  
 7. 
