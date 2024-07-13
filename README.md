@@ -34,15 +34,18 @@ pnpm add react-responsive-carousel
  pnpm add swiper
  ```
  
-7. 
+7. react rating
 
 ```bash
+pnpm add @smastrom/react-rating
 
 ```
 
-8. 
+8. react icon
    
  ```bash
+ pnpm add react-icons
+
  
  ```
 9. 

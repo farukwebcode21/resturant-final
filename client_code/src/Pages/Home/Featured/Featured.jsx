@@ -4,7 +4,7 @@ import featuredImage from "../../../assets/home/featured.jpg";
 const Featured = () => {
   return (
     <div
-      className="backdrop-blur-md bg-opacity-70  shadow-lg"
+      className="backdrop-blur-md bg-fixed bg-opacity-70  shadow-lg my-10"
       style={{
         backgroundImage: `url(${featuredImage})`,
         backgroundSize: "cover",
@@ -16,7 +16,7 @@ const Featured = () => {
         style={{
           position: "absolute",
           inset: 0,
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          backgroundColor: "rgba(0, 0, 0, 0.6)",
         }}
       ></div>
       <div className="relative flex flex-col items-center justify-center">
@@ -37,7 +37,10 @@ const Featured = () => {
                 quasi. Eaque repellat recusandae ad laudantium tempore
                 consequatur consequuntur omnis ullam maxime tenetur.
               </p>
-              <a href="#" className="text-white font-semibold underline">
+              <a
+                href="#"
+                className="text-white btn btn-outline border-0 no-underline border-b-4 font-semibold"
+              >
                 READ MORE
               </a>
             </div>

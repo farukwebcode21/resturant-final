@@ -15,7 +15,7 @@ import BistoBoss from "../../../components/BistoBoss/BistoBoss";
 
 const Category = () => {
   return (
-    <div>
+    <div className='my-10'>
       <SectionTitle
         subHeading={"From 11.00am to 10.00pm"}
         heading={"Order Online"}
