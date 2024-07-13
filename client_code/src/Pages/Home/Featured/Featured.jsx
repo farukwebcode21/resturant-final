@@ -16,12 +16,12 @@ const Featured = () => {
         style={{
           position: "absolute",
           inset: 0,
-          backgroundColor: "rgba(0, 0, 0.5, 0.15)",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
       ></div>
-      <SectionTitle subHeading={"Check it out"} heading={"Featured item"} />
-      <div className="relative flex items-center justify-center">
-        <div className="relative max-w-4xl p-8">
+      <div className="relative flex flex-col items-center justify-center">
+        <SectionTitle subHeading={"Check it out"} heading={"Featured item"} />
+        <div className="relative max-w-4xl my-10 p-10">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <img src={featuredImage} alt="Food" />

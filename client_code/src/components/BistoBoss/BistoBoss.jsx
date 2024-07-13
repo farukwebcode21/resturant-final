@@ -1,7 +1,7 @@
 import backgroundImage from "../../assets/home/chef-service.jpg";
 const BistoBoss = () => {
   return (
-    <div>
+    <div className="my-20">
       <div
         className="hero h-[520px]"
         style={{
