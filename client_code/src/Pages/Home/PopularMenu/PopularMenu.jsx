@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import MenuItem from "../../Shared/MenuItem/MenuItem";
-import CallUs from "../../../components/CallUs/CallUs";
 
 const PopularMenu = () => {
   const [menu, setMenu] = useState([]);
@@ -24,7 +23,6 @@ const PopularMenu = () => {
           ))}
         </div>
       </section>
-      <CallUs />
     </>
   );
 };

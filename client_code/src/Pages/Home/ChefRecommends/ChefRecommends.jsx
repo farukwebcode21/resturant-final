@@ -13,7 +13,7 @@ const ChefRecommends = () => {
             <img className="w-[410px] h-[300px]" src={salad_1} alt="Shoes" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title text-black">Caeser Salad</h2>
+            <h2 className="card-title text-white">Caeser Salad</h2>
             <p>Lettuce, Eaggs, Parmesan Cheese, Chicken,Breast Fillets</p>
             <div className="card-actions">
               <button className="btn  bg-gray-600 uppercase">
@@ -28,7 +28,7 @@ const ChefRecommends = () => {
             <img className="w-[410px] h-[300px]" src={salad_2} alt="Shoes" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title text-black">Caeser Salad</h2>
+            <h2 className="card-title text-white">Caeser Salad</h2>
             <p>Lettuce, Eaggs, Parmesan Cheese, Chicken,Breast Fillets</p>
             <div className="card-actions">
               <button className="btn  bg-gray-600 uppercase">
@@ -43,7 +43,7 @@ const ChefRecommends = () => {
             <img className="w-[410px] h-[300px]" src={salad_3} alt="Shoes" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title text-black">Caeser Salad</h2>
+            <h2 className="card-title text-white">Caeser Salad</h2>
             <p>Lettuce, Eaggs, Parmesan Cheese, Chicken,Breast Fillets</p>
             <div className="card-actions">
               <button className="btn  bg-gray-600 uppercase">
