@@ -38,19 +38,18 @@ pnpm add react-responsive-carousel
 
 ```bash
 pnpm add @smastrom/react-rating
-
 ```
 
 8. react icon
    
  ```bash
  pnpm add react-icons
-
- 
  ```
-9. 
+9. Meta Tag React Helmet
 
 ```bash
+pnpm add react-helmet
+pnpm add react-helmet-async
 
 ```
 
