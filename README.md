@@ -53,10 +53,10 @@ pnpm add react-helmet-async
 
 ```
 
-10. 
+10. React Parallax
    
  ```bash
- 
+ pnpm add react-parallax
  ```
 11. 
 
