@@ -8,25 +8,48 @@ import soupImg from "../../../assets/menu/soup-bg.jpg";
 import { useMenu } from "../../../hooks/useMenu";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import MenuCategory from "../MenuCategory/MenuCategory";
+import Button from "../../Shared/Button/Button";
 
 const OurMenu = () => {
   const [menu] = useMenu();
   const offered = menu.filter((item) => item.category === "offered");
-  const soups = menu.filter((item) => item.category === "soup");
-  const desserets = menu.filter((item) => item.category === "dessert");
-  const salad = menu.filter((item) => item.category === "salad");
-  const pizza = menu.filter((item) => item.category === "pizza");
+  const soups = menu.filter((item) => item.category === "soup").slice(0, 8);
+  const desserets = menu
+    .filter((item) => item.category === "dessert")
+    .slice(0, 6);
+  const salad = menu.filter((item) => item.category === "salad").slice(0, 6);
+  const pizza = menu.filter((item) => item.category === "pizza").slice(0, 6);
 
-  const paragrapText = (
-    <p className="capitalize">
-      Lorem Ipsum has been the industry’s standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book.
-    </p>
-  );
+  const categoryTexts = {
+    desserts: (
+      <div className="capitalize">
+        Indulge in our sweet and delicious desserts, crafted to perfection just
+        for you.
+      </div>
+    ),
+    pizza: (
+      <div className="capitalize">
+        Enjoy our freshly baked pizzas with a variety of toppings to choose
+        from.
+      </div>
+    ),
+    salad: (
+      <div className="capitalize">
+        Fresh and healthy salads to complement your meal and satisfy your
+        cravings.
+      </div>
+    ),
+    soup: (
+      <div className="capitalize px-10">
+        Lorem Ipsum has been the industry’s standard dummy text ever since the
+        1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book.
+      </div>
+    ),
+  };
 
   return (
-    <div>
+    <div className="mb-4">
       <Helmet>
         <title>Bistro Boss | Menu</title>
       </Helmet>
@@ -37,30 +60,36 @@ const OurMenu = () => {
       />
       <SectionTitle subHeading={"Don't Miss"} heading={"Today's Offer"} />
       <MenuCategory items={offered} />
+      <Button name={"order your favourite food"} />
       <MenuCategory
         items={desserets}
         title={"Desserts"}
         coverImage={desertImg}
-        subText={paragrapText}
+        subText={categoryTexts.desserts}
       />
+      <Button name={"order your favourite food"} />
+
       <MenuCategory
         items={pizza}
         title={"pizza"}
         coverImage={pizzaImg}
-        subText={paragrapText}
+        subText={categoryTexts.pizza}
       />
+      <Button name={"order your favourite food"} />
       <MenuCategory
         items={salad}
         title={"salad"}
         coverImage={saladImg}
-        subText={paragrapText}
+        subText={categoryTexts.salad}
       />
+      <Button name={"order your favourite food"} />
       <MenuCategory
         items={soups}
         title={"soup"}
         coverImage={soupImg}
-        subText={paragrapText}
+        subText={categoryTexts.soup}
       />
+      <Button name={"order your favourite food"} />
     </div>
   );
 };
