@@ -3,6 +3,7 @@ import orderCover from "../../../assets/shop/banner2.jpg";
 import Cover from "../../Shared/Cover/Cover";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import "./OrderStyle.css";
 
 const Order = () => {
   const [tabIndex, setTabIndex] = useState(0);
