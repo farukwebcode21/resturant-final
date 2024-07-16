@@ -58,9 +58,10 @@ pnpm add react-helmet-async
  ```bash
  pnpm add react-parallax
  ```
-11. 
+11.  React Tab With Components
 
 ```bash
+pnpm add react-tabs
 
 ```
 
