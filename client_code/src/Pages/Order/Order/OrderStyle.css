@@ -1,7 +1,7 @@
 /* custom-tabs.css */
 
 /* Customize the TabList */
-.react-tabs__tab-list {
+.react-tabs__tab-list div {
   background-color: #f0f0f0;
   padding: 10px;
   border-radius: 5px;
@@ -25,7 +25,7 @@
   border-color: #007bff;
 }
 
-.react-tabs__tab:focus {
+.react-tabs__tab:focus div {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
