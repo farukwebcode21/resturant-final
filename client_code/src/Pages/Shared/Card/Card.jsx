@@ -2,7 +2,7 @@ const Card = ({ item }) => {
   console.log(item);
   const { recipe, price, name, image } = item;
   return (
-    <div className="card bg-base-100 w-96 shadow-xl">
+    <div className="card rounded-none bg-base-100 w-96 shadow-xl cursor-pointer hover:shadow-orange-800">
       <figure>
         <img src={image} alt="Shoes" />
       </figure>

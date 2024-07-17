@@ -26,14 +26,12 @@ const Order = () => {
       />
       <div className="flex justify-center">
         <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-          <TabList className="space-x-8 ">
-            <Tab>
-              <div>salad</div>
-            </Tab>
-            <Tab>pizza</Tab>
-            <Tab>soups</Tab>
-            <Tab>Desserts</Tab>
-            <Tab>Drinks</Tab>
+          <TabList className="bg-gray-500 p-2 rounded flex justify-center space-x-8 ">
+            <Tab className="px-4 py-2 rounded cursor-pointer">salad</Tab>
+            <Tab className="px-4 py-2 rounded cursor-pointer">pizza</Tab>
+            <Tab className="px-4 py-2 rounded cursor-pointer">soups</Tab>
+            <Tab className="px-4 py-2 rounded cursor-pointer">Desserts</Tab>
+            <Tab className="px-4 py-2 rounded cursor-pointer">Drinks</Tab>
           </TabList>
           <TabPanel>
             <div className="grid grid-cols-3 gap-10">
