@@ -7,33 +7,30 @@ import Card from "../../Shared/Card/Card";
 const ChefRecommends = () => {
   const cardsData = [
     {
-      title: "Caeser Salad",
-      content: "Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets.",
+      name: "Caeser Salad",
+      recipe: "Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets.",
       image: salad_1,
+      price: 150,
     },
     {
-      title: "Pizza King",
-      content: "Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets.",
+      name: "Pizza King",
+      recipe: "Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets.",
       image: salad_2,
+      price: 250,
     },
     {
-      title: "Tai Soup",
-      content: "Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets.",
+      name: "Tai Soup",
+      recipe: "Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets.",
       image: salad_3,
+      price: 10,
     },
   ];
   return (
     <section className="my-10">
       <SectionTitle subHeading={"Should Try"} heading={"Chef recommends"} />
       <div className="my-10 flex justify-center space-x-6">
-        {cardsData.map((card, index) => (
-          <Card
-            key={index}
-            title={card.title}
-            cardImg={card.image}
-            content={card.content}
-            cardButton={"Add To Card"}
-          />
+        {cardsData.map((item, index) => (
+          <Card key={index} item={item} />
         ))}
       </div>
     </section>

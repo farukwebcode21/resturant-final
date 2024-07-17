@@ -1,14 +1,17 @@
-const Card = ({ cardImg, content, title, cardButton }) => {
+const Card = ({ item }) => {
+  console.log(item);
+  const { recipe, price, name, image } = item;
   return (
-    <div className=" rounded-none bg-base-100 w-auto shadow-2xl justify-center items-center">
+    <div className="card bg-base-100 w-96 shadow-xl">
       <figure>
-        <img className="w-[410px] h-[300px]" src={cardImg} alt="Shoes" />
+        <img src={image} alt="Shoes" />
       </figure>
-      <div className="card-body items-center text-center">
-        <h2 className="card-title text-white">{title}</h2>
-        <p>{content}</p>
-        <div className="card-actions">
-          <button className="btn  bg-gray-600 uppercase">{cardButton}</button>
+      <p className="absolute bg-slate-900 right-0 mt-4 mr-4 px-2">${price}</p>
+      <div className="card-body items-center">
+        <h2 className="card-title">{name}</h2>
+        <p>{recipe}</p>
+        <div className="card-actions justify-end">
+          <button className="btn btn-primary">Add To Card</button>
         </div>
       </div>
     </div>

@@ -12,12 +12,10 @@ const Order = () => {
   const [menu] = useMenu();
 
   const drinks = menu.filter((item) => item.category === "drinks");
-  const soups = menu.filter((item) => item.category === "soup").slice(0, 8);
-  const desserets = menu
-    .filter((item) => item.category === "dessert")
-    .slice(0, 6);
-  const salad = menu.filter((item) => item.category === "salad").slice(0, 6);
-  const pizza = menu.filter((item) => item.category === "pizza").slice(0, 6);
+  const soups = menu.filter((item) => item.category === "soup");
+  const desserets = menu.filter((item) => item.category === "dessert");
+  const salad = menu.filter((item) => item.category === "salad");
+  const pizza = menu.filter((item) => item.category === "pizza");
 
   return (
     <div>
@@ -38,15 +36,9 @@ const Order = () => {
             <Tab>Drinks</Tab>
           </TabList>
           <TabPanel>
-            <div className=" grid grid-cols-3 gap-10">
+            <div className="grid grid-cols-3 gap-10">
               {salad.map((item) => (
-                <Card
-                  key={item.id}
-                  cardImg={item.image}
-                  title={item.name}
-                  content={item.recipe}
-                  cardButton={"Add To Card"}
-                />
+                <Card key={item.id} item={item} />
               ))}
             </div>
           </TabPanel>
@@ -54,13 +46,7 @@ const Order = () => {
           <TabPanel>
             <div className="grid grid-cols-3 gap-10">
               {pizza.map((item) => (
-                <Card
-                  key={item.id}
-                  cardImg={item.image}
-                  title={item.name}
-                  content={item.recipe}
-                  cardButton={"Add To Card"}
-                />
+                <Card key={item.id} item={item} />
               ))}
             </div>
           </TabPanel>
@@ -68,39 +54,21 @@ const Order = () => {
           <TabPanel>
             <div className="grid grid-cols-3 gap-10">
               {soups.map((item) => (
-                <Card
-                  key={item.id}
-                  cardImg={item.image}
-                  title={item.name}
-                  content={item.recipe}
-                  cardButton={"Add To Card"}
-                />
+                <Card key={item.id} item={item} />
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid grid-cols-3 gap-10">
               {desserets.map((item) => (
-                <Card
-                  key={item.id}
-                  cardImg={item.image}
-                  title={item.name}
-                  content={item.recipe}
-                  cardButton={"Add To Card"}
-                />
+                <Card key={item.id} item={item} />
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid grid-cols-3 gap-10">
               {drinks.map((item) => (
-                <Card
-                  key={item.id}
-                  cardImg={item.image}
-                  title={item.name}
-                  content={item.recipe}
-                  cardButton={"Add To Card"}
-                />
+                <Card key={item.id} item={item} />
               ))}
             </div>
           </TabPanel>
