@@ -8,13 +8,12 @@ import soupImg from "../../../assets/menu/soup-bg.jpg";
 import { useMenu } from "../../../hooks/useMenu";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import MenuCategory from "../MenuCategory/MenuCategory";
-import Button from "../../Shared/Button/Button";
 
 const OurMenu = () => {
   const [menu] = useMenu();
   const offered = menu.filter((item) => item.category === "offered");
   const soups = menu.filter((item) => item.category === "soup").slice(0, 8);
-  const desserets = menu
+  const desserts = menu
     .filter((item) => item.category === "dessert")
     .slice(0, 6);
   const salad = menu.filter((item) => item.category === "salad").slice(0, 6);
@@ -60,14 +59,13 @@ const OurMenu = () => {
       />
       <SectionTitle subHeading={"Don't Miss"} heading={"Today's Offer"} />
       <MenuCategory items={offered} />
-      <Button name={"order your favourite food"} />
+
       <MenuCategory
-        items={desserets}
-        title={"Desserts"}
+        items={desserts}
+        title={"desserts"}
         coverImage={desertImg}
         subText={categoryTexts.desserts}
       />
-      <Button name={"order your favourite food"} />
 
       <MenuCategory
         items={pizza}
@@ -75,21 +73,20 @@ const OurMenu = () => {
         coverImage={pizzaImg}
         subText={categoryTexts.pizza}
       />
-      <Button name={"order your favourite food"} />
+
       <MenuCategory
         items={salad}
         title={"salad"}
         coverImage={saladImg}
         subText={categoryTexts.salad}
       />
-      <Button name={"order your favourite food"} />
+
       <MenuCategory
         items={soups}
         title={"soup"}
         coverImage={soupImg}
         subText={categoryTexts.soup}
       />
-      <Button name={"order your favourite food"} />
     </div>
   );
 };
