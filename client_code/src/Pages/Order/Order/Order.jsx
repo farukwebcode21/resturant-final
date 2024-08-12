@@ -7,6 +7,7 @@ import "./OrderStyle.css";
 import { useMenu } from "../../../hooks/useMenu";
 import OrderTab from "./OrderTab";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Order = () => {
   const categories = ["salad", "pizza", "soup", "dessert", "drinks"];
@@ -23,6 +24,9 @@ const Order = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Bistro Boss | Order Food</title>
+      </Helmet>
       <Cover
         img={orderCover}
         title={"Order Food"}
@@ -30,7 +34,7 @@ const Order = () => {
       />
       <div className="flex justify-center">
         <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-          <TabList className="p-2 rounded flex justify-center space-x-8 ">
+          <TabList className="p-2 rounded flex justify-center space-x-8 uppercase ">
             <Tab className="px-4 py-2 rounded cursor-pointer">salad</Tab>
             <Tab className="px-4 py-2 rounded cursor-pointer">pizza</Tab>
             <Tab className="px-4 py-2 rounded cursor-pointer">soups</Tab>

@@ -7,18 +7,21 @@ import OrderTab from "../../Order/Order/OrderTab";
 const ChefRecommends = () => {
   const cardsData = [
     {
+      id: "01",
       name: "Caeser Salad",
       recipe: "Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets.",
       image: salad_1,
       price: 150,
     },
     {
+      id: "02",
       name: "Pizza King",
       recipe: "Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets.",
       image: salad_2,
       price: 250,
     },
     {
+      id: "03",
       name: "Tai Soup",
       recipe: "Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets.",
       image: salad_3,

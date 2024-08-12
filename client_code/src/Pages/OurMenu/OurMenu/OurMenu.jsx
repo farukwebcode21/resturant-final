@@ -13,14 +13,14 @@ const OurMenu = () => {
   const [menu] = useMenu();
   const offered = menu.filter((item) => item.category === "offered");
   const soups = menu.filter((item) => item.category === "soup").slice(0, 8);
-  const desserts = menu
+  const dessert = menu
     .filter((item) => item.category === "dessert")
     .slice(0, 6);
   const salad = menu.filter((item) => item.category === "salad").slice(0, 6);
   const pizza = menu.filter((item) => item.category === "pizza").slice(0, 6);
 
   const categoryTexts = {
-    desserts: (
+    dessert: (
       <div className="capitalize">
         Indulge in our sweet and delicious desserts, crafted to perfection just
         for you.
@@ -50,7 +50,7 @@ const OurMenu = () => {
   return (
     <div className="mb-4">
       <Helmet>
-        <title>Bistro Boss | Menu</title>
+        <title>Bistro Boss | Our Menu</title>
       </Helmet>
       <Cover
         img={menuImg}
@@ -61,8 +61,8 @@ const OurMenu = () => {
       <MenuCategory items={offered} />
 
       <MenuCategory
-        items={desserts}
-        title={"desserts"}
+        items={dessert}
+        title={"dessert"}
         coverImage={desertImg}
         subText={categoryTexts.desserts}
       />
